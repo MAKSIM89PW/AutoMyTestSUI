@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B971EE882A7FE41600C5D035 /* AutoMyTestSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE872A7FE41600C5D035 /* AutoMyTestSUIApp.swift */; };
-		B971EE8A2A7FE41600C5D035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE892A7FE41600C5D035 /* ContentView.swift */; };
+		B971EE8A2A7FE41600C5D035 /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE892A7FE41600C5D035 /* CarList.swift */; };
 		B971EE8C2A7FE41700C5D035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B971EE8B2A7FE41700C5D035 /* Assets.xcassets */; };
 		B971EE8F2A7FE41700C5D035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B971EE8E2A7FE41700C5D035 /* Preview Assets.xcassets */; };
 		B971EE962A7FE50700C5D035 /* CarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE952A7FE50700C5D035 /* CarImages.swift */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		B971EE842A7FE41600C5D035 /* AutoMyTestSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoMyTestSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B971EE872A7FE41600C5D035 /* AutoMyTestSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMyTestSUIApp.swift; sourceTree = "<group>"; };
-		B971EE892A7FE41600C5D035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B971EE892A7FE41600C5D035 /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
 		B971EE8B2A7FE41700C5D035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B971EE8E2A7FE41700C5D035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B971EE952A7FE50700C5D035 /* CarImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImages.swift; sourceTree = "<group>"; };
@@ -98,6 +98,7 @@
 		B971EEA22A7FE77100C5D035 /* CarsList */ = {
 			isa = PBXGroup;
 			children = (
+				B971EE892A7FE41600C5D035 /* CarList.swift */,
 				B971EEA02A7FE74B00C5D035 /* CarsListCard.swift */,
 			);
 			path = CarsList;
@@ -123,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				B971EEAB2A7FF6A600C5D035 /* AvtomobilkaApp.swift */,
-				B971EE892A7FE41600C5D035 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B971EE8A2A7FE41600C5D035 /* ContentView.swift in Sources */,
+				B971EE8A2A7FE41600C5D035 /* CarList.swift in Sources */,
 				B971EEAC2A7FF6A600C5D035 /* AvtomobilkaApp.swift in Sources */,
 				B971EE982A7FE54700C5D035 /* CarListItem.swift in Sources */,
 				B971EE9B2A7FE61600C5D035 /* NetworkManager.swift in Sources */,

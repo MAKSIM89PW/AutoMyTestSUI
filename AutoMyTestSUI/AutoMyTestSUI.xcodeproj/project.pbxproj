@@ -13,6 +13,10 @@
 		B971EE8F2A7FE41700C5D035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B971EE8E2A7FE41700C5D035 /* Preview Assets.xcassets */; };
 		B971EE962A7FE50700C5D035 /* CarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE952A7FE50700C5D035 /* CarImages.swift */; };
 		B971EE982A7FE54700C5D035 /* CarListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE972A7FE54700C5D035 /* CarListItem.swift */; };
+		B971EE9B2A7FE61600C5D035 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE9A2A7FE61600C5D035 /* NetworkManager.swift */; };
+		B971EE9F2A7FE71D00C5D035 /* CarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE9E2A7FE71D00C5D035 /* CarsListViewModel.swift */; };
+		B971EEA12A7FE74B00C5D035 /* CarsListCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEA02A7FE74B00C5D035 /* CarsListCard.swift */; };
+		B971EEA72A7FE86900C5D035 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B971EEA62A7FE86900C5D035 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		B971EE8E2A7FE41700C5D035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B971EE952A7FE50700C5D035 /* CarImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImages.swift; sourceTree = "<group>"; };
 		B971EE972A7FE54700C5D035 /* CarListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItem.swift; sourceTree = "<group>"; };
+		B971EE9A2A7FE61600C5D035 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B971EE9E2A7FE71D00C5D035 /* CarsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewModel.swift; sourceTree = "<group>"; };
+		B971EEA02A7FE74B00C5D035 /* CarsListCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListCard.swift; sourceTree = "<group>"; };
+		B971EEA62A7FE86900C5D035 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../Downloads/Avtomobilka-main/Avtomobilka/Application/Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 		B971EE862A7FE41600C5D035 /* AutoMyTestSUI */ = {
 			isa = PBXGroup;
 			children = (
+				B971EEA82A7FE8F300C5D035 /* ViewModel */,
+				B971EEA22A7FE77100C5D035 /* CarsList */,
 				B971EE992A7FE57600C5D035 /* Model */,
-				B971EE872A7FE41600C5D035 /* AutoMyTestSUIApp.swift */,
-				B971EE892A7FE41600C5D035 /* ContentView.swift */,
-				B971EE8B2A7FE41700C5D035 /* Assets.xcassets */,
+				B971EEA52A7FE7E800C5D035 /* Network */,
 				B971EE8D2A7FE41700C5D035 /* Preview Content */,
+				B971EE872A7FE41600C5D035 /* AutoMyTestSUIApp.swift */,
+				B971EE8B2A7FE41700C5D035 /* Assets.xcassets */,
+				B971EEA92A7FE93100C5D035 /* App */,
+				B971EEA62A7FE86900C5D035 /* Info.plist */,
 			);
 			path = AutoMyTestSUI;
 			sourceTree = "<group>";
@@ -79,6 +91,38 @@
 				B971EE972A7FE54700C5D035 /* CarListItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B971EEA22A7FE77100C5D035 /* CarsList */ = {
+			isa = PBXGroup;
+			children = (
+				B971EEA02A7FE74B00C5D035 /* CarsListCard.swift */,
+			);
+			path = CarsList;
+			sourceTree = "<group>";
+		};
+		B971EEA52A7FE7E800C5D035 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B971EE9A2A7FE61600C5D035 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B971EEA82A7FE8F300C5D035 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B971EE9E2A7FE71D00C5D035 /* CarsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B971EEA92A7FE93100C5D035 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B971EE892A7FE41600C5D035 /* ContentView.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +185,7 @@
 			files = (
 				B971EE8F2A7FE41700C5D035 /* Preview Assets.xcassets in Resources */,
 				B971EE8C2A7FE41700C5D035 /* Assets.xcassets in Resources */,
+				B971EEA72A7FE86900C5D035 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +198,11 @@
 			files = (
 				B971EE8A2A7FE41600C5D035 /* ContentView.swift in Sources */,
 				B971EE982A7FE54700C5D035 /* CarListItem.swift in Sources */,
+				B971EE9B2A7FE61600C5D035 /* NetworkManager.swift in Sources */,
 				B971EE882A7FE41600C5D035 /* AutoMyTestSUIApp.swift in Sources */,
 				B971EE962A7FE50700C5D035 /* CarImages.swift in Sources */,
+				B971EEA12A7FE74B00C5D035 /* CarsListCard.swift in Sources */,
+				B971EE9F2A7FE71D00C5D035 /* CarsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

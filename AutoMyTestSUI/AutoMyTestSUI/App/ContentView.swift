@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = CarsListViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.vertical) {
+            ForEach(viewModel.carsList, id: \.id) { car in
+                CarsListCard(image: car.images,
+                             brand: car.brandName,
+                             model: car.modelName,
+                             year: car.year,
+                             transmission: car.transmissionName)
+                .padding(.vertical, 5)
+            }
         }
-        .padding()
+        .onAppear {
+            viewModel.fetchCarsList()
+        }
     }
 }
 

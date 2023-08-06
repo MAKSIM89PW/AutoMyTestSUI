@@ -12,6 +12,7 @@ private enum Urls {
     static let carsList = "http://am111.05.testing.place/api/v1/cars/list?page="
     static let car = "http://am111.05.testing.place/api/v1/car/"
     static let carPosts = "http://am111.05.testing.place/api/v1/car/32/posts"
+    //    static let carPosts = "http://am111.05.testing.place/api/v1/car/"
 }
 
 class NetworkManager: ObservableObject {
@@ -33,7 +34,8 @@ class NetworkManager: ObservableObject {
     }
     
     func getCarInfo(for id: Int) -> AnyPublisher<Car, Error> {
-        let buildedUrl = Urls.car + String(id)
+        let buildedUrl = Urls.car + String(id) + String("/posts")
+        print(buildedUrl)
         guard let url = URL(string: buildedUrl) else {
             return Fail(error: NSError(domain: "Error", code: -1)).eraseToAnyPublisher()
         }

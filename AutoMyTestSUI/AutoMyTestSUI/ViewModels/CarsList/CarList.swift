@@ -8,26 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var carsListViewModel = CarsListViewModel()
+    @ObservedObject var viewModel = CarsListViewModel()
     @StateObject var carViewModel = CarViewModel()
-    @StateObject var postViewModel = PostCarViewModel()
     
     @State private var selectedCarId: Int?
     
     var body: some View {
         NavigationStack {
-            Text("Автомобилка")
-                .font(.title)
-                .fontWeight(.bold)
-            
             ScrollView(.vertical) {
                 LazyVStack {
-                    ForEach(carsListViewModel.carsList, id: \.id) { car in
+                    ForEach(viewModel.carsList, id: \.id) { car in
                         NavigationLink(
-                            destination: CarScreen(carViewModel: carViewModel, postsViewModel: postViewModel)
+                            destination: CarScreen(viewModel: carViewModel)
                                 .onAppear {
                                     carViewModel.fetchCarInformation(car: car.id)
-                                    postViewModel.fetchCarPostsInformation(car: car.id)
                                 },
                             tag: car.id,
                             selection: $selectedCarId
@@ -40,14 +34,14 @@ struct ContentView: View {
                                 .padding(.vertical, 5)
                         }
                         .onAppear {
-                            if car.id == carsListViewModel.carsList.last?.id {
-                                carsListViewModel.fetchMoreCarsInList()
+                            if car.id == viewModel.carsList.last?.id {
+                                viewModel.fetchMoreCarsInList()
                             }
                         }
                     }
                 }
                 
-                if carsListViewModel.isLoading {
+                if viewModel.isLoading {
                     ProgressView()
                         .progressViewStyle(.circular)
                         .padding(.all)
@@ -55,7 +49,7 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            carsListViewModel.fetchCarsList()
+            viewModel.fetchCarsList()
         }
     }
 }

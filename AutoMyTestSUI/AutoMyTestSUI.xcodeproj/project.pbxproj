@@ -28,6 +28,12 @@
 		B971EEE62A803BA100C5D035 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEE52A803BA100C5D035 /* Car.swift */; };
 		B971EEE82A803BC600C5D035 /* CarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEE72A803BC600C5D035 /* CarInfo.swift */; };
 		B971EEEA2A803E1600C5D035 /* PostCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEE92A803E1600C5D035 /* PostCarViewModel.swift */; };
+		B971EEEC2A804E5F00C5D035 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEEB2A804E5F00C5D035 /* Formatter.swift */; };
+		B971EEEE2A804E7900C5D035 /* AccountStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEED2A804E7900C5D035 /* AccountStatisticsView.swift */; };
+		B971EEF02A804E9700C5D035 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEEF2A804E9700C5D035 /* AvatarView.swift */; };
+		B971EEF22A804EBE00C5D035 /* CarListCardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEF12A804EBE00C5D035 /* CarListCardInfoView.swift */; };
+		B971EEF42A804FBE00C5D035 /* PostCardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEF32A804FBE00C5D035 /* PostCardInfoView.swift */; };
+		B971EEF62A804FD800C5D035 /* StatisticsItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EEF52A804FD800C5D035 /* StatisticsItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +60,12 @@
 		B971EEE52A803BA100C5D035 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		B971EEE72A803BC600C5D035 /* CarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
 		B971EEE92A803E1600C5D035 /* PostCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCarViewModel.swift; sourceTree = "<group>"; };
+		B971EEEB2A804E5F00C5D035 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		B971EEED2A804E7900C5D035 /* AccountStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountStatisticsView.swift; sourceTree = "<group>"; };
+		B971EEEF2A804E9700C5D035 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		B971EEF12A804EBE00C5D035 /* CarListCardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListCardInfoView.swift; sourceTree = "<group>"; };
+		B971EEF32A804FBE00C5D035 /* PostCardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardInfoView.swift; sourceTree = "<group>"; };
+		B971EEF52A804FD800C5D035 /* StatisticsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +105,12 @@
 				B971EE8D2A7FE41700C5D035 /* Preview Content */,
 				B971EE8B2A7FE41700C5D035 /* Assets.xcassets */,
 				B971EEA92A7FE93100C5D035 /* App */,
+				B971EEEB2A804E5F00C5D035 /* Formatter.swift */,
+				B971EEED2A804E7900C5D035 /* AccountStatisticsView.swift */,
+				B971EEEF2A804E9700C5D035 /* AvatarView.swift */,
+				B971EEF12A804EBE00C5D035 /* CarListCardInfoView.swift */,
+				B971EEF32A804FBE00C5D035 /* PostCardInfoView.swift */,
+				B971EEF52A804FD800C5D035 /* StatisticsItems.swift */,
 			);
 			path = AutoMyTestSUI;
 			sourceTree = "<group>";
@@ -287,13 +305,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B971EEF42A804FBE00C5D035 /* PostCardInfoView.swift in Sources */,
 				B971EE8A2A7FE41600C5D035 /* CarList.swift in Sources */,
 				B971EEAC2A7FF6A600C5D035 /* AvtomobilkaApp.swift in Sources */,
+				B971EEEC2A804E5F00C5D035 /* Formatter.swift in Sources */,
+				B971EEF62A804FD800C5D035 /* StatisticsItems.swift in Sources */,
 				B971EEBC2A802DFF00C5D035 /* PostsForCar.swift in Sources */,
 				B971EE982A7FE54700C5D035 /* CarListItem.swift in Sources */,
+				B971EEEE2A804E7900C5D035 /* AccountStatisticsView.swift in Sources */,
+				B971EEF22A804EBE00C5D035 /* CarListCardInfoView.swift in Sources */,
 				B971EEBE2A802ED600C5D035 /* CarViewModel.swift in Sources */,
 				B971EEB42A802C8800C5D035 /* AuthorAvatar.swift in Sources */,
 				B971EEEA2A803E1600C5D035 /* PostCarViewModel.swift in Sources */,
+				B971EEF02A804E9700C5D035 /* AvatarView.swift in Sources */,
 				B971EEBA2A802DD900C5D035 /* PostAuthor.swift in Sources */,
 				B971EE9B2A7FE61600C5D035 /* NetworkManager.swift in Sources */,
 				B971EEB62A802CFF00C5D035 /* CarUser.swift in Sources */,

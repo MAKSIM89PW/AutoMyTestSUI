@@ -55,6 +55,7 @@ struct TopProfileView: View {
         }
         .frame(height: 350)
     }
+}
     
     struct TopProfileView_Previews: PreviewProvider {
         static var previews: some View {
@@ -65,8 +66,9 @@ struct TopProfileView: View {
                 autoCount: 2)
         }
     }
+
     
-    struct AvatarView: View {
+struct AvatarView: View {
         var avatar: String
         
         var body: some View {
@@ -84,3 +86,4 @@ struct TopProfileView: View {
             }
         }
     }
+

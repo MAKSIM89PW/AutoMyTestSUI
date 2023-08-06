@@ -11,6 +11,8 @@
 		B971EE8A2A7FE41600C5D035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE892A7FE41600C5D035 /* ContentView.swift */; };
 		B971EE8C2A7FE41700C5D035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B971EE8B2A7FE41700C5D035 /* Assets.xcassets */; };
 		B971EE8F2A7FE41700C5D035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B971EE8E2A7FE41700C5D035 /* Preview Assets.xcassets */; };
+		B971EE962A7FE50700C5D035 /* CarImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE952A7FE50700C5D035 /* CarImages.swift */; };
+		B971EE982A7FE54700C5D035 /* CarListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B971EE972A7FE54700C5D035 /* CarListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B971EE892A7FE41600C5D035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B971EE8B2A7FE41700C5D035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B971EE8E2A7FE41700C5D035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B971EE952A7FE50700C5D035 /* CarImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImages.swift; sourceTree = "<group>"; };
+		B971EE972A7FE54700C5D035 /* CarListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		B971EE862A7FE41600C5D035 /* AutoMyTestSUI */ = {
 			isa = PBXGroup;
 			children = (
+				B971EE992A7FE57600C5D035 /* Model */,
 				B971EE872A7FE41600C5D035 /* AutoMyTestSUIApp.swift */,
 				B971EE892A7FE41600C5D035 /* ContentView.swift */,
 				B971EE8B2A7FE41700C5D035 /* Assets.xcassets */,
@@ -65,6 +70,15 @@
 				B971EE8E2A7FE41700C5D035 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B971EE992A7FE57600C5D035 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B971EE952A7FE50700C5D035 /* CarImages.swift */,
+				B971EE972A7FE54700C5D035 /* CarListItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B971EE8A2A7FE41600C5D035 /* ContentView.swift in Sources */,
+				B971EE982A7FE54700C5D035 /* CarListItem.swift in Sources */,
 				B971EE882A7FE41600C5D035 /* AutoMyTestSUIApp.swift in Sources */,
+				B971EE962A7FE50700C5D035 /* CarImages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

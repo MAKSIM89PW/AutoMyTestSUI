@@ -1,5 +1,5 @@
 //
-//  CarViewModel.swift
+//  PostCarViewModel.swift
 //  AutoMyTestSUI
 //
 //  Created by Максим Нурутдинов on 06.08.2023.
@@ -7,28 +7,27 @@
 
 import Combine
 
-final class CarViewModel: ObservableObject {
-    
-    @Published var car: Car?
+final class PostCarViewModel: ObservableObject {
+    @Published var carPost: PostsForCar?
+    @Published var isLoading = false
     @Published var error: Error?
- //   @Published var carId = 1
+    @Published var carId = 0
 
     private var cancelable = Set<AnyCancellable>()
 
-    func fetchCarInformation(car id: Int) {
-        print("ENTER")
-        NetworkManager.shared.getCarInfo(for: id)
+    func fetchCarPostsInformation() {
+        NetworkManager.shared.getCarPosts(for: carId)
             .sink { [weak self] completion in
                 switch completion {
                 case .failure(let error):
                     self?.error = error
-                    print("Error car \(error)")
+                    print("ERROR \(error)")
                 case .finished:
                     break
                 }
-            } receiveValue: { [weak self] car in
-                self?.car = car
-                print(car?.user)
+            } receiveValue: { [weak self] carPost in
+                self?.carPost = carPost
+                print(carPost)
             }
             .store(in: &cancelable)
     }

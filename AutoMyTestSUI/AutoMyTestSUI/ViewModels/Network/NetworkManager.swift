@@ -11,9 +11,11 @@ import Combine
 private enum Urls {
     static let carsList = "http://am111.05.testing.place/api/v1/cars/list?page="
     static let car = "http://am111.05.testing.place/api/v1/car/"
+    static let carPosts = "http://am111.05.testing.place/api/v1/car/32/posts"
 }
 
 class NetworkManager: ObservableObject {
+    
     static let shared = NetworkManager()
     
     func getCarsList(for page: Int) -> AnyPublisher<[CarsListItem], Error> {

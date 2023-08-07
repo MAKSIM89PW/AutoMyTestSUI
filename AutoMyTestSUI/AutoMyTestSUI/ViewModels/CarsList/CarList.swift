@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CarsList.swift
 //  AutoMyTestSUI
 //
 //  Created by Максим Нурутдинов on 06.08.2023.
@@ -16,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            Text("Avtomobilka")
+            Text("Автомобилка")
                 .font(.title)
                 .fontWeight(.bold)
             
@@ -24,7 +24,7 @@ struct ContentView: View {
                 LazyVStack {
                     ForEach(carsListViewModel.carsList, id: \.id) { car in
                         NavigationLink(
-                            destination: CarScreen(viewModel: carViewModel, postsViewModel: postViewModel)
+                            destination: CarScreen(carViewModel: carViewModel, postsViewModel: postViewModel)
                                 .onAppear {
                                     carViewModel.fetchCarInformation(car: car.id)
                                     postViewModel.fetchCarPostsInformation(car: car.id)

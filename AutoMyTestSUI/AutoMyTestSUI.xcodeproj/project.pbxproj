@@ -56,7 +56,6 @@
 		B971EEB92A802DD900C5D035 /* PostAuthor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthor.swift; sourceTree = "<group>"; };
 		B971EEBB2A802DFF00C5D035 /* PostsForCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsForCar.swift; sourceTree = "<group>"; };
 		B971EEBD2A802ED600C5D035 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
-		B971EEC22A802F7B00C5D035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B971EEE52A803BA100C5D035 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		B971EEE72A803BC600C5D035 /* CarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
 		B971EEE92A803E1600C5D035 /* PostCarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCarViewModel.swift; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		B971EEF12A804EBE00C5D035 /* CarListCardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListCardInfoView.swift; sourceTree = "<group>"; };
 		B971EEF32A804FBE00C5D035 /* PostCardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardInfoView.swift; sourceTree = "<group>"; };
 		B971EEF52A804FD800C5D035 /* StatisticsItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsItems.swift; sourceTree = "<group>"; };
+		B9E977EF2A8150E000F61097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +98,7 @@
 		B971EE862A7FE41600C5D035 /* AutoMyTestSUI */ = {
 			isa = PBXGroup;
 			children = (
+				B9E977EF2A8150E000F61097 /* Info.plist */,
 				B971EEC12A802F6800C5D035 /* Views */,
 				B971EEA82A7FE8F300C5D035 /* ViewModels */,
 				B971EE992A7FE57600C5D035 /* Models */,
@@ -105,12 +106,6 @@
 				B971EE8D2A7FE41700C5D035 /* Preview Content */,
 				B971EE8B2A7FE41700C5D035 /* Assets.xcassets */,
 				B971EEA92A7FE93100C5D035 /* App */,
-				B971EEEB2A804E5F00C5D035 /* Formatter.swift */,
-				B971EEED2A804E7900C5D035 /* AccountStatisticsView.swift */,
-				B971EEEF2A804E9700C5D035 /* AvatarView.swift */,
-				B971EEF12A804EBE00C5D035 /* CarListCardInfoView.swift */,
-				B971EEF32A804FBE00C5D035 /* PostCardInfoView.swift */,
-				B971EEF52A804FD800C5D035 /* StatisticsItems.swift */,
 			);
 			path = AutoMyTestSUI;
 			sourceTree = "<group>";
@@ -138,6 +133,7 @@
 			children = (
 				B971EE892A7FE41600C5D035 /* CarList.swift */,
 				B971EEA02A7FE74B00C5D035 /* CarsListCard.swift */,
+				B971EEF12A804EBE00C5D035 /* CarListCardInfoView.swift */,
 			);
 			path = CarsList;
 			sourceTree = "<group>";
@@ -164,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				B971EEAB2A7FF6A600C5D035 /* AvtomobilkaApp.swift */,
-				B971EEC22A802F7B00C5D035 /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -185,6 +180,9 @@
 				B971EEC42A802FAD00C5D035 /* Post */,
 				B971EEAD2A801E5300C5D035 /* CarScreen.swift */,
 				B971EEB12A801EF300C5D035 /* TopProfileView.swift */,
+				B971EEEF2A804E9700C5D035 /* AvatarView.swift */,
+				B971EEED2A804E7900C5D035 /* AccountStatisticsView.swift */,
+				B971EEF52A804FD800C5D035 /* StatisticsItems.swift */,
 			);
 			path = CarProfile;
 			sourceTree = "<group>";
@@ -193,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				B971EEAF2A801ED100C5D035 /* PostCard.swift */,
+				B971EEF32A804FBE00C5D035 /* PostCardInfoView.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -230,9 +229,18 @@
 		B971EEE42A803B0700C5D035 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B971EEF72A80598200C5D035 /* Common */,
 				B971EEA52A7FE7E800C5D035 /* Network */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B971EEF72A80598200C5D035 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B971EEEB2A804E5F00C5D035 /* Formatter.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,6 +469,7 @@
 				DEVELOPMENT_TEAM = F6472MA2BW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoMyTestSUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -490,6 +499,7 @@
 				DEVELOPMENT_TEAM = F6472MA2BW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AutoMyTestSUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

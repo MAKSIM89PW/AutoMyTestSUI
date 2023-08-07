@@ -8,12 +8,11 @@
 import Combine
 
 final class CarViewModel: ObservableObject {
-    
     @Published var car: Car?
     @Published var error: Error?
-
-    private var cancelable = Set<AnyCancellable>()
-
+    
+    private  var cancelable = Set<AnyCancellable>()
+    
     func fetchCarInformation(car id: Int) {
         NetworkManager.shared.getCarInfo(for: id)
             .sink { [weak self] completion in
@@ -30,6 +29,6 @@ final class CarViewModel: ObservableObject {
     }
     
     func reset() {
-           car = nil
-       }
+        car = nil
+    }
 }

@@ -12,7 +12,7 @@ final class CarsListViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var error: Error?
     private var page = 1
-
+    
     private var cancelable = Set<AnyCancellable>()
     
     func fetchMoreCarsInList() {

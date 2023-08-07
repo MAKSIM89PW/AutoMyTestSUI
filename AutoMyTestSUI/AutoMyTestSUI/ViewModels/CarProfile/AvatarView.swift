@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AvatarView: View {
-    
     var avatar: String
     
     var body: some View {
